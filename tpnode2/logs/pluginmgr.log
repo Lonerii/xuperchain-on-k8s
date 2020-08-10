@@ -1,0 +1,14 @@
+t=2020-08-05T01:31:16-0400 lvl=trce msg="Plugin conf load successfully!" module=pluginmgr pluginCount=14
+t=2020-08-05T01:31:16-0400 lvl=trce msg="start autoloadPlugins" module=pluginmgr pluginPath=plugins/autoload
+t=2020-08-05T01:31:16-0400 lvl=trce msg="Load a plugin successfully" module=pluginmgr name=crypto subtype=default
+t=2020-08-05T01:31:26-0400 lvl=trce msg="Plugin conf load successfully!" module=pluginmgr pluginCount=14
+t=2020-08-05T01:31:26-0400 lvl=trce msg="start autoloadPlugins" module=pluginmgr pluginPath=plugins/autoload
+t=2020-08-05T01:31:26-0400 lvl=trce msg="Load a plugin successfully" module=pluginmgr name=crypto subtype=default
+t=2020-08-05T01:31:27-0400 lvl=trce msg="Plugin conf load successfully!" module=pluginmgr pluginCount=14
+t=2020-08-05T01:31:27-0400 lvl=trce msg="start autoloadPlugins" module=pluginmgr pluginPath=plugins/autoload
+t=2020-08-05T01:31:27-0400 lvl=trce msg="Load a plugin successfully" module=pluginmgr name=crypto subtype=default
+t=2020-08-09T23:01:05-0400 lvl=trce msg="Plugin conf load successfully!" module=pluginmgr pluginCount=14
+t=2020-08-09T23:01:05-0400 lvl=trce msg="start autoloadPlugins" module=pluginmgr pluginPath=plugins/autoload
+t=2020-08-09T23:01:05-0400 lvl=trce msg="Load a plugin successfully" module=pluginmgr name=kv subtype=default
+t=2020-08-09T23:01:05-0400 lvl=trce msg="Load a plugin successfully" module=pluginmgr name=crypto subtype=default
+t=2020-08-09T23:01:05-0400 lvl=trce msg="Load a plugin successfully" module=pluginmgr name=kv subtype=default

@@ -1,0 +1,17 @@
+t=2020-08-10T02:09:25-0400 lvl=dbug msg="create block chain by contract" module=xchain from=xuper toCreate=xuper
+t=2020-08-10T02:09:25-0400 lvl=info msg="ledger meta" module=xchain genesis_block= tip_block= trunk_height=0
+t=2020-08-10T02:09:25-0400 lvl=trce msg="Start to ConfirmBlock" module=xchain
+t=2020-08-10T02:09:25-0400 lvl=info msg="begin format genesis block" module=xchain
+t=2020-08-10T02:09:25-0400 lvl=info msg="start to confirm block" module=xchain blockid=59877be676a8f2c4540d1b0d326263222db213b5a52d41609781eb6f9217c081 txCount=1
+t=2020-08-10T02:09:25-0400 lvl=dbug msg="print block size when confirm block" module=xchain blockSize=1563 blockid=59877be676a8f2c4540d1b0d326263222db213b5a52d41609781eb6f9217c081
+t=2020-08-10T02:09:25-0400 lvl=dbug msg="confirm block cost" module=xchain blkTimer="saveHeader: 0.20 ms,saveAllTxs: 0.27 ms,saveToDisk: 0.29 ms,total: 1.76ms"
+t=2020-08-10T02:09:25-0400 lvl=info msg="ConfirmBlock Success" module=xchain Height=1
+t=2020-08-10T02:09:25-0400 lvl=info msg="utxo total is estimated" module=xchain total=0
+t=2020-08-10T02:09:25-0400 lvl=dbug msg="debug tx" module=xchain txid=9a3d97f41043bc1639dd05b13c327ef657c8fcfb869437e080532c8256f96e77
+t=2020-08-10T02:09:25-0400 lvl=dbug msg=txoutput module=xchain offset=0 addr=R1FFCmPPDRKJyJmcE3j9j3FRLi9vah87K amount=100000000000000000000
+t=2020-08-10T02:09:25-0400 lvl=dbug msg="hit queryblock cache" module=xchain blkid=59877be676a8f2c4540d1b0d326263222db213b5a52d41609781eb6f9217c081
+t=2020-08-10T02:09:25-0400 lvl=info msg="unconfirm table size" module=xchain unconfirmTxMap=0
+t=2020-08-10T02:09:25-0400 lvl=dbug msg="autogen tx list size, before play block" module=xchain len=0
+t=2020-08-10T02:09:25-0400 lvl=trce msg="  start to dotx" module=xchain txid=9a3d97f41043bc1639dd05b13c327ef657c8fcfb869437e080532c8256f96e77
+t=2020-08-10T02:09:25-0400 lvl=trce msg="    insert utxo key" module=xchain utxoKey=UR1FFCmPPDRKJyJmcE3j9j3FRLi9vah87K_9a3d97f41043bc1639dd05b13c327ef657c8fcfb869437e080532c8256f96e77_0 amount=100000000000000000000
+t=2020-08-10T02:09:25-0400 lvl=dbug msg="autogen tx list size, after play block" module=xchain len=0

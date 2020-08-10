@@ -1,0 +1,65 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: tpxchain
+  name: tpnode2
+spec:
+  selector:
+    matchLabels:
+      app: tpxchain
+      role: tpnode2
+      org: tpnode2
+      name: tpnode2
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: tpxchain
+        role: tpnode2
+        org: tpnode2
+        name: tpnode2
+    spec:
+      containers:
+      - name: tpnode2
+        image: lonerii/xuperchain-nc:latest
+        ports:
+        - containerPort: 37101
+        - containerPort: 47101
+        volumeMounts:
+        - mountPath: /home/work/xuperunion/data
+          name: tpnode2data
+          subPath: data/
+        - mountPath: /home/work/xuperunion/conf
+          name: tpnode2data
+          subPath: conf/
+        - mountPath: /home/work/xuperunion/logs
+          name: tpnode2data
+          subPath: logs/
+      volumes:
+      - name: tpnode2data
+        persistentVolumeClaim:
+          claimName: tpnode2-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: tpxchain
+  name: tpnode2
+spec:
+  selector:
+    app: tpxchain
+    role: tpnode2
+    org: tpnode2
+    name: tpnode2
+  type: NodePort
+  ports:
+  - name: rpc-endpoint
+    protocol: TCP
+    port: 37101
+    targetPort: 37101
+  - name: p2p-endpoint
+    protocol: TCP
+    port: 47101
+    targetPort: 47101
