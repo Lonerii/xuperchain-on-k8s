@@ -29,9 +29,9 @@ p2p:
   port: 47101
   #certPath: ./data/tls/1
   #serviceName: saas_test.server.com
-bootNodes:
-  - "/ip4/tpnode1.tpxchain/tcp/32268/p2p/QmRA6MnfNGyYJp2x2boBjM43wwJshNdi5eVYLF4ctMaib2"
-  - "/ip4/tpnode1.tpxchain/tcp/32268/p2p/QmQJT4sntPTcmUE1Q9z2asaFGDgm1jmiRyNtyTLWLFVL8M"
+  bootNodes:
+    - "/ip4/10.11.78.162/tcp/47101/p2p/QmRA6MnfNGyYJp2x2boBjM43wwJshNdi5eVYLF4ctMaib2"
+    - "/ip4/10.106.66.61/tcp/47101/p2p/QmQJT4sntPTcmUE1Q9z2asaFGDgm1jmiRyNtyTLWLFVL8M"
   #staticNodes:
   #  xuper:
   #    - "127.0.0.1:47102"
